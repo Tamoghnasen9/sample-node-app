@@ -47,6 +47,7 @@ pipeline {
                 }
             }
             steps {
+                // Todo: Authenticate to Kubernetes cluster
                 sh 'kubectl apply -f manifest/app.yaml'
             }
         }    
